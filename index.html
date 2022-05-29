@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Puddingfest 2022</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+
+<div class="header">
+    <nav class="navbar" id="navbar-id">
+    <input type="checkbox" id="show-menu">
+    <label for="show-menu" class="menu-icon">
+
+    <span>
+
+    <img src="./image/hamburger.png" alt="">
+    </span>
+    </label>
+
+<div class="name-logo">
+    <img src="/image/logo.gif" alt="">
+    </div>
+
+<div class="nav-list">
+    <li class="nav-item">
+    <a class="nav-link" href="#intropage">Home</a>
+    </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="#gallery">Photo</a>
+    </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="#timelinepage">Timeline</a>
+    </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="#contactcontainer">Register</a>
+
+    </li>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="intropage", id="intropage">
+
+        <div class="intropage-container">
+
+        <div class="intro-text">
+            <p class="intro-info">Biggest Tech Event in The World</p>
+
+            <div class="typewriter">
+              <h1>PUDDINGFEST</h1>
+            </div>
+
+            <!-- <h1 class="intro-title">PUDDINGFEST</h1> -->
+
+            <div class="registerbuttoncont">
+            <a class="register-button" href="register.html" role="button">Register Now</a>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- carousel -->
+    <div class="gallery", id="gallery">
+        <div class="gallery-container">
+          <img class="gallery-item gallery-item-1" src="/image/event1.gif" data-index="1">
+          <img class="gallery-item gallery-item-2" src="/image/event2.gif" data-index="2">
+          <img class="gallery-item gallery-item-3" src="/image/event3.gif" data-index="3">
+          <img class="gallery-item gallery-item-4" src="/image/event4.gif" data-index="4">
+          <img class="gallery-item gallery-item-5" src="/image/event5.gif" data-index="5">
+        </div>
+        <div class="gallery-controls"></div>
+      </div>
+      <script src="carousel.js"></script>
+
+    <!-- timeline -->
+
+<div class="container", id="timelinepage">
+    <div class="timeline">
+      <ul>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">15th August, 2022</h3>
+            <h1>Tech Showcase</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">16th August, 2022</h3>
+            <h1>Techminar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">17th August, 2022</h3>
+            <h1>Techaton</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">18th August, 2022</h3>
+            <h1>Techformation</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</id>
+
+<!-- Register -->
+
+<div class="contactcontainer", id="contactcontainer">
+
+    <div class="contact">
+    <div class="contactname">
+      <div class="contactextcontainer">
+        <div class="grid"></div>
+        <div class="lines"></div>
+        <h1 class="atas">
+          <span>BE PART OF US</span>
+        </h1>
+        <h2 class="bawah">Register Yourself Now!</h2>
+        </div>
+    </div>
+
+    <br>
+    <div class="contactimg">
+    <img src="./image/contactus_alt2.gif" alt="">
+    </div>
+
+    <div class="contactform">
+
+    <div class="register-container">
+
+<form action=" " method="" class="form" id="form">
+    <div class="regis-data">
+        <div>
+            <label for="name">Name:</label>
+        </div>
+        <input type="text" name="name" id="name" onblur="changeFontColor()">
+        <h5 class="warning"></h5>
+    </div>
+
+    <div class="regis-data">
+        <div>
+            <label for="email">Email:</label>
+        </div>
+        <input type="email" name="email" id="email" onfocus="changeBorderColor()" onblur="goBack()">
+        <h5 class="warning"></h5>
+    </div>
+
+    <div class="regis-data">
+      <div>
+          <label for="phone">Phone:</label>
+      </div>
+      <input type="text" name="phone" id="phone" onblur="changeFontColor()">
+      <h5 class="warning"></h5>
+  </div>
+
+    <div class="regis-data">
+        <div>
+            <label for="event">Event:</label>
+        </div>
+        <select name="event" id="event" onchange="displayChange()">
+            <option value="">Select Option</option>
+            <option value="Day 1">PuddingFest Tech Showcase Area (15 August 2022 - 15.00 - 18.00 WIB</option>
+            <option value="Day 2">PuddingFest TechMinar (16 August 2022 - 12.00 - 17.00 WIB</option>
+            <option value="Day 3">PuddingFest TechHackthon (17 August 2022 - 12.00 - 17.00 WIB</option>
+            <option value="Day 4">PuddingFest Techformation (28 August 2022 - 09.00 - 17.30 WIB</option>
+        </select>
+        <h5 class="warning" id="event-warning"></h5>
+    </div>
+
+    <div class="submit-button">
+        <input type="submit" id="submit" value="Register">
+    </div>
+
+    <script src="./regis.js" type="module"></script>
+    
+</form>
+    
+</div>
+</div>
+</form>
+    
+</div>
+</div>
+</div>
+
+
+<!-- jss navbar -->
+    <script>
+    var navBar = document.getElementById("navbar-id");
+
+    window.onscroll = function() {
+    if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300) {
+    navBar.classList.add("scrolled");
+    } else {
+    navBar.classList.remove("scrolled");
+    }
+    };
+    </script>
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footer-sosmed-cont">
+      <div class="footer-sosmed">
+        <a href="https://www.youtube.com/watch?v=fMLGmcv7ALI" target="_blank"><img src="/image/email.svg" alt="" srcset=""></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="/image/linkedin.svg" alt="" srcset=""></a>
+        <a href="https://www.youtube.com/watch?v=75P_rhOhvyE" target="_blank"><img src="/image/instagram.svg" alt="" srcset=""></a>
+        <a href="https://www.youtube.com/watch?v=ms5PvfgJAf4" target="_blank"><img src="/image/youtube.svg" alt="" srcset=""></a>
+      </div>
+      </div>
+
+      <div class="text-footer">
+        <p>All rights reserved - PuddingFest 2022©</p>
+      </div>
+    </div>
+    
+    
+</body>
+</html>
